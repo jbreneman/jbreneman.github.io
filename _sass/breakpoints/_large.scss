@@ -1,0 +1,171 @@
+@media screen and (min-device-width: 1200px)  {
+
+	.page-header {
+		padding: 0 20%;
+
+		&__links {
+
+			li {
+				display: inline-block;
+				margin: 0 0 0 1.5em;
+			}
+		}
+
+		a {
+
+			&:hover {
+				color: rgba(white, 0.8);
+			}
+		}
+	}
+
+	.splash {
+		font-size: 6vw;
+	}
+
+	.post {
+		margin: 0 10%;
+
+		p {
+			margin: 0 0 1% 0;
+		}
+	}
+
+	.main-section {
+		margin: 0 0 2% 0;
+		padding: 2% 0;
+
+		&:hover {
+			color: rgba(white, 0.9);
+		}
+
+		&__header {
+	  	}
+
+	  	&__heading {
+			font-size: 8vw;
+		}
+	}
+
+	.skills {
+
+	  	&__header {
+			width: 25%;
+			transform: translateX(-100%);
+			opacity: 0;
+	  	}
+
+		&__section {
+			width: 25%;
+			transform: translateX(100%);
+			opacity: 0;
+
+			&:nth-of-type(3) {
+				transition-delay: 200ms;
+			}
+
+			&:nth-of-type(4) {
+				transition-delay: 400ms;
+			}
+		}
+
+		&__description {
+			border-right: 5px solid lighten(silver, 20%);
+			border-top: 0;
+			padding: 0 1.5em 0 0;
+		}
+		
+	}
+
+	.projects {
+		flex-direction: row-reverse;
+
+		&__header {
+			width: 40%;
+			transform: translateX(100%);
+			opacity: 0;
+	  	}
+
+		&__section {
+			width: 20%;
+			transform: translateX(-100%);
+			opacity: 0;
+
+			&:nth-of-type(3) {
+				transition-delay: 200ms;
+			}
+
+			&:nth-of-type(4) {
+				transition-delay: 400ms;
+			}
+		}
+	}
+
+	.blog {
+		&__header {
+			width: 30%;
+			transform: translateX(-100%);
+			opacity: 0;
+	  	}
+
+	  	&__section {
+			width: 17.5%;
+			transform: translateX(-100%);
+			opacity: 0;
+
+			&:nth-of-type(3) {
+				transition-delay: 200ms;
+			}
+
+			&:nth-of-type(4) {
+				transition-delay: 400ms;
+			}
+
+			&:nth-of-type(5) {
+				transition-delay: 600ms;
+			}
+		}
+	}
+
+	.contact {
+		flex-direction: row-reverse;
+		margin: 2% 0;
+
+		&__header {
+			width: 50%;
+			transform: translateX(100%);
+			opacity: 0;
+	  	}
+
+		&__heading {
+		}
+
+		&__section {
+			transform: translateX(-100%);
+			opacity: 0;
+			color: $mine-shaft;
+			width: 50%;
+			background: white;
+			padding: 2em;
+		}
+
+		&__nav {
+			font-size: 3em;
+			line-height: 1;
+
+			li {
+				display: inline-block;
+			}
+
+			a {
+				box-shadow: none;
+				border: 0;
+
+				&:hover {
+					background: transparent;
+					color: #092756;
+				}
+			}
+		}
+	}
+}

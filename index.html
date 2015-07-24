@@ -1,0 +1,99 @@
+---
+layout: default
+title: "Jesse Breneman: Front End Web Developer"
+---
+
+<main>
+      <section class="splash">
+        <h2>Hi. I build websites.</h2>
+      </section>
+      <section class="main-section skills" id="skills">
+        <div class="main-section__header skills__header">
+          <h2 class="main-section__heading skills__heading">How I do it.</h2>
+        </div>
+        <div class="skills__section">
+          <h3>Front End</h3>
+          <p class="skills__description">
+            HTML and CSS is my jam! I've been building websites as a hobby for years, and have always been excited to watch the languages evolve. As I've grown Javascript has been working it's way into my websites. I'm currently interested in Javascript frameworks and planning on delving into them deeply in the future.
+          </p>
+        </div>
+
+        <div class="skills__section">
+          <h3>Back End</h3>
+          <p class="skills__description">
+            I prefer front end work, but I've dabbled in back end as well. I have used PHP with Codeigniter & Mysql to create dynamic database driven sites in the past. Nowadays I prefer to do anything server side in Node.js.
+          </p>
+        </div>
+
+        <div class="skills__section">
+          <h3>Tools & Software</h3>
+          <p class="skills__description">
+            I've used Photoshop extensively both as a design tool and to edit photos that I've taken, and I also have some experience using Illustrator. Other tools I use in my workflow include Git <a href="https://github.com/jbreneman">(check out my github!)</a> and gulp and all the goodness that goes along with it. Sublime Text is my preferred text editor.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="main-section projects" id="projects">
+        <div class="main-section__header projects__header">
+          <h2 class="main-section__heading projects__heading">Current Projects.</h2>
+        </div>
+
+        <div class="projects__section">
+          <img src="images/projects/chat.png" alt="Simple Node Chat">
+          <div class="projects__description">
+            <a href="https://github.com/jbreneman/simple-node-chat">Simple Node Chat</a>
+          </div>
+        </div>
+
+        <div class="projects__section">
+          <img src="images/projects/suggest.png" alt="Suggest my Colors app">
+          <div class="projects__description">
+            <a href="http://jessebreneman.com/suggest/">SuggestMyColors</a>
+          </div>
+        </div>
+
+        <div class="projects__section">
+          <img src="images/projects/ashery.png" alt="Ashery Farms website">
+          <div class="projects__description">
+            <a href="http://asheryfarms.com/">asheryfarms.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section blog" id="blog">
+        <div class="main-section__header blog__header">
+          <h2 class="main-section__heading blog__heading">Recent Posts.</h2>
+        </div>
+
+        {% for post in site.posts limit:3 %}
+        <div class="blog__section">
+          <h3>{{ post.title }}</h3>
+          {{ post.date | date_to_string }}
+          <p class="blog__description">
+            {{ post.excerpt }}
+            <a href="{{ BASE_PATH }}{{ post.url }}">Read More...</a>
+          </p>
+        </div>
+        {% endfor %}
+      </section>
+
+      <section class="main-section contact" id="contact">
+        <div class="main-section__header contact__header">
+          <h2 class="main-section__heading contact__heading">I'm looking for a job.</h2>
+        </div>
+
+        <div class="contact__section">
+          <p>I'm looking for a junior front end developer position in the Columbus, Ohio area. Have a look at me on <a href="http://www.linkedin.com/in/jessebreneman">linkedin</a>, check out my code on <a href="https://github.com/jbreneman">Github</a>, or <a href="mailto: talktome@jessebreneman.com">get in touch with me</a>.</p>
+          <h3>Find me elsewhere:</h3>
+          <nav class="contact__nav">
+            <ul>
+              <li><a href="mailto: talktome@jessebreneman.com"><i class="fa fa-envelope-o icon"></i></a></li>
+              <li><a href="https://github.com/jbreneman"><i class="fa fa-github icon"></i></a></li>
+              <li><a href="https://twitter.com/jmbreneman"><i class="fa fa-twitter icon"></i></a></li>
+              <li><a href="http://www.linkedin.com/in/jessebreneman"><i class="fa fa-linkedin icon"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>

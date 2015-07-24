@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main class="post">
+	<section class="splash">
+		<h2>{{ page.title }}</h2>
+	</section>
+
+<div class="post">
+
+  <header class="post-header">
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &mdash; <i>written by {{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>

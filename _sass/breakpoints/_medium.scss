@@ -1,0 +1,104 @@
+@media screen and (min-device-width: 750px) and (max-device-width: 1199px)  {
+
+	.page-header {
+		padding: 0 20%;
+
+		&__links {
+			font-size: 1.5em;
+			float: right;
+			@include vertical-align-all();
+
+			li:last-child {
+				display: inline-block;
+				margin: 0 0 0 1.5em;
+			}
+		}
+	}
+
+	.splash {
+		font-size: 10vw;
+	}
+
+	.main-section {
+		margin: 0 0 2% 0;
+		padding: 2% 0;
+
+		&:hover {
+			color: rgba(white, 0.9);
+		}
+
+	  	&__heading {
+			font-size: 16vw;
+		}
+	}
+
+	.skills {
+
+	  	&__header {
+			width: 50%;
+	  	}
+
+		&__section {
+			width: 50%;
+		}
+
+		&__description {
+			border-top: 0;
+			padding: 0 1.5em 0 0;
+		}
+		
+	}
+
+	.projects {
+		flex-direction: row-reverse;
+
+		&__header {
+			width: 50%;
+	  	}
+
+		&__heading {
+			font-size: 10vw;
+		}
+
+		&__section {
+			width: 50%;
+		}
+	}
+
+	.contact {
+		margin: 2% 0;
+
+		&__header {
+			width: 100%;
+	  	}
+
+		&__heading {
+		}
+
+		&__section {
+			color: $mine-shaft;
+			width: 100%;
+			background: white;
+			padding: 2em;
+		}
+
+		&__nav {
+			font-size: 3em;
+			line-height: 1;
+
+			li {
+				display: inline-block;
+			}
+
+			a {
+				box-shadow: none;
+				border: 0;
+
+				&:hover {
+					background: transparent;
+					color: #092756;
+				}
+			}
+		}
+	}
+}

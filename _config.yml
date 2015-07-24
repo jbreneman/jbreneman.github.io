@@ -1,0 +1,15 @@
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Jesse Breneman is a front end web developer from Columbus Ohio. This is my blog full of random code snippets and other things I'm interested in.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jessebreneman.com" # the base hostname & protocol for your site
+twitter_username: jmbreneman
+github_username:  jbreneman
+
+# Build settings
+markdown: kramdown
+
+# Custom stuff
+excerpt_separator: <!--ex-->

@@ -1,0 +1,63 @@
+body {
+	color: $mine-shaft;
+	font-size: 1.1em;
+	font-family: $body-font;
+	line-height: 1.8;
+}
+
+main {
+	position: relative;
+	& a {
+		color: $mine-shaft;
+		box-shadow: inset 0 -4px 0 $silver;
+		border-bottom: 1px solid $silver;
+		transition: all $transition-duration ease;
+
+		&:hover {
+			border-bottom: 3px solid $silver;
+		}
+
+		&:focus {
+		}
+
+		&:active {
+			background: lighten($silver, 10%);
+		}
+
+	}
+}
+
+
+h1, h2, h3 {
+	font-family: $headline-font;
+	line-height: 1.3;
+	margin: .5em 0;
+}
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+input, textarea {
+	font-size: 1.1em;
+	border: 1px solid $silver;
+	padding: 5px;
+	margin: 2.5% 0;
+}
+
+textarea {
+	width: 100%;
+	height: 20em;
+}
+
+label {
+	display: block;
+}
