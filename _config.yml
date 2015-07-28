@@ -12,5 +12,7 @@ github_username:  jbreneman
 markdown: kramdown
 
 # Custom stuff
-paginate: 10
 permalink: /:title/
+
+paginate: 10
+paginate_path: "/blog/page:num/"

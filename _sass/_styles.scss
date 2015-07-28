@@ -159,11 +159,6 @@
 
 .blog {
 
-	time {
-		display: inline-block;
-		margin: 1em 0 0 0;
-	}
-
   	&__header {
 		width: 100%;
   	}
@@ -222,4 +217,38 @@
 
 .page-footer {
 	margin: 2em 10%;
+}
+
+//---------------------------------
+//
+//blog specific styles
+//
+//---------------------------------
+
+.blog-nav__links {
+	position: absolute;
+	top: 30%;
+	font-size: 10vh;
+
+	a {
+		color: $mine-shaft;
+
+		&:hover {
+			color: lighten($mine-shaft, 20%);
+		}
+	}
+
+	&--previous {
+		right: 2%;
+	}
+
+	&--next {
+		left: 2%;
+	}
+}
+
+.previous
+
+.next-link {
+	left: 2%;
 }
