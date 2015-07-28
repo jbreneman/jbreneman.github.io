@@ -68,11 +68,11 @@ title: "Jesse Breneman: Front End Web Developer"
 
         {% for post in site.posts limit:3 %}
         <div class="blog__section">
+          <time>{{ post.date | date_to_string }}</time>
           <h3>{{ post.title }}</h3>
-          {{ post.date | date_to_string }}
           <p class="blog__description">
-            {{ post.excerpt }}
-            <a href="{{ BASE_PATH }}{{ post.url }}">Read More...</a>
+            {{ post.content | strip_html | truncatewords: 30 }}
+            <a href="{{ BASE_PATH }}{{ post.url }}">Read More</a>
           </p>
         </div>
         {% endfor %}

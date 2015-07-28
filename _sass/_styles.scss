@@ -147,6 +147,7 @@
 
 			&:hover {
 				background: transparent;
+				border: transparent;
 			}
 		}
 
@@ -157,6 +158,11 @@
 }
 
 .blog {
+
+	time {
+		display: inline-block;
+		margin: 1em 0 0 0;
+	}
 
   	&__header {
 		width: 100%;
@@ -174,8 +180,6 @@
 	}
 
 	&__description {
-		border-top: 5px solid lighten(silver, 20%);
-		padding: 1.5em 0 0 0;
 	}
 	
 }
