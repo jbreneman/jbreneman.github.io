@@ -12,4 +12,5 @@ github_username:  jbreneman
 markdown: kramdown
 
 # Custom stuff
-excerpt_separator: <!--ex-->
+paginate: 10
+permalink: /:title/

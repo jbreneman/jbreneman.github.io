@@ -1,11 +1,10 @@
 ---
 layout: post
-title: I am not a writer
+title:  "Testing"
 categories: meta
 ---
 
 That's right, I am not a writer, and I'm starting a blog anyway.
-
 
 Why? It was actually a podcast that inspired this, [ShopTalk Show](http://shoptalkshow.com/). I can't recall which episode it was, but they suggested blogging just to remind your future self of how to do something. I think that is an excellent idea, and maybe my writing will improve as a side benefit.
 
