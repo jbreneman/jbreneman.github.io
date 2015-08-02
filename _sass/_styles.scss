@@ -216,7 +216,7 @@
 }
 
 .page-footer {
-	padding: 2em 10%;
+	padding: 0 10% 2em 10%;
 
 	& a {
 		color: $mine-shaft;
@@ -231,7 +231,8 @@
 	}
 
 	&--color {
-		margin: 4em 0 0 0;
+		margin: 0;
+		padding-top: 2em;
 		background: $background-gradient;
 		color: white;
 
