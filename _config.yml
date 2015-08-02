@@ -17,5 +17,3 @@ permalink: /:title/
 
 paginate: 10
 paginate_path: "/blog/page:num/"
-
-gems: [jekyll-sitemap]
