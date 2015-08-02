@@ -17,7 +17,7 @@ categories: [jekyll, webdev]
 
 Getting started with jekyll is relatively easy if you are used to using the command line. Assuming you have ruby installed, you can run these four commands and get right to developing!
 
-{% highlight shell %}
+{% highlight bash %}
 gem install jekyll
 jekyll new my-awesome-site
 cd my-awesome-site
@@ -29,7 +29,7 @@ That's it! Jekyll defaults to [localhost:4000](http://localhost:4000/) for it's 
 ### Front Matter
 
 Front matter is a list of settings that you can add to the beginning of a file. This allows you to set all kinds of things such as what layout to use, the title of the page, and more. You can add front matter like so:
-{% highlight shell %}
+{% highlight bash %}
 ---
 layout: default
 title: My awesome blog!
