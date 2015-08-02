@@ -1,17 +1,26 @@
 ---
-layout: default
+layout: default-blog
 ---
 <section class="splash">
-	<h2>{{ page.title }}</h2>
-</section>
-
-{% if page.next %} 
+	{% if page.next %} 
 	<span class="blog-nav__links blog-nav__links--next">
 		<a rel="next" href="{{ page.next.url }}"><i class="fa fa-angle-left"></i></a>
 	</span>
 {% endif %}
 
+	<h2>{{ page.title }}</h2>
+
+	{% if page.previous %} 
+	<span class="blog-nav__links blog-nav__links--previous">
+		<a rel="prev" href="{{ page.previous.url }}"><i class="fa fa-angle-right"></i></a>
+	</span>
+{% endif %}
+</section>
+
+
+
 <main class="post">
+
 
   <header class="post-header">
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &mdash; <i>written by {{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
@@ -23,8 +32,4 @@ layout: default
 
 </main>
 
-{% if page.previous %} 
-	<span class="blog-nav__links blog-nav__links--previous">
-		<a rel="prev" href="{{ page.previous.url }}"><i class="fa fa-angle-right"></i></a>
-	</span>
-{% endif %}
+

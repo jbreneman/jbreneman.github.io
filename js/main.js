@@ -278,6 +278,7 @@ setInterval(function() {
     if (didScroll) {
         didScroll = false;
         
+        //this is awful :(
         if(!skillsInView) {
             //check if divs are within viewport
             var skillsInView = withinviewport(skills.container, {bottom: -100});

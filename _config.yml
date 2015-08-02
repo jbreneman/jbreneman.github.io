@@ -13,6 +13,7 @@ markdown: kramdown
 
 # Custom stuff
 permalink: /:title/
+highlighter: rouge
 
 paginate: 10
 paginate_path: "/blog/page:num/"
