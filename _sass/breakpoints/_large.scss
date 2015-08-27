@@ -53,12 +53,14 @@
 	  	&__header {
 			width: 25%;
 			transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
 			opacity: 0;
 	  	}
 
 		&__section {
 			width: 25%;
 			transform: translateX(100%);
+			-webkit-transform: translateX(100%);
 			opacity: 0;
 
 			&:nth-of-type(3) {
@@ -84,12 +86,14 @@
 		&__header {
 			width: 40%;
 			transform: translateX(100%);
+			-webkit-transform: translateX(100%);
 			opacity: 0;
 	  	}
 
 		&__section {
 			width: 20%;
 			transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
 			opacity: 0;
 
 			&:nth-of-type(3) {
@@ -106,12 +110,14 @@
 		&__header {
 			width: 30%;
 			transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
 			opacity: 0;
 	  	}
 
 	  	&__section {
 			width: 17.5%;
 			transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
 			opacity: 0;
 
 			&:nth-of-type(3) {
@@ -135,6 +141,7 @@
 		&__header {
 			width: 50%;
 			transform: translateX(100%);
+			-webkit-transform: translateX(100%);
 			opacity: 0;
 	  	}
 
@@ -143,6 +150,7 @@
 
 		&__section {
 			transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
 			opacity: 0;
 			color: $mine-shaft;
 			width: 50%;
