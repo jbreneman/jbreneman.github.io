@@ -2,7 +2,7 @@
 	transform: translateX(0) !important;
 	-webkit-transform: translateX(0) !important;
 	opacity: 1 !important;
-	transition: -webkit-transform $transition-duration ease, transform $transition-duration ease, opacity $transition-duration ease;
+	transition: all $transition-duration ease;
 }
 
 .page-header {
