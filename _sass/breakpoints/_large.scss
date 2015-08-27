@@ -82,6 +82,7 @@
 
 	.projects {
 		flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
 
 		&__header {
 			width: 40%;
@@ -136,6 +137,7 @@
 
 	.contact {
 		flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
 		margin: 2% 0;
 
 		&__header {
